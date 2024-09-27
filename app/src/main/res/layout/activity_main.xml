@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_gradient"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#044A9A"
+        android:elevation="10dp"
+        android:layout_marginTop="-20dp"
+        app:cardCornerRadius="20dp"
+        android:outlineAmbientShadowColor="#D8D5D5"
+        >
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="20dp"
+                >
+            <TextView
+                android:id="@+id/txtcity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/location"
+                android:layout_marginStart="20dp"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="Location"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:id="@+id/txtToday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:text="Today"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#044A9A">
+
+            <TextView
+                android:id="@+id/txtLastUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:drawableLeft="@drawable/last_update"
+                android:drawablePadding="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Last Update"
+                android:textColor="#D6CCCC"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtDiscription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtLastUpdate"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Clouds"
+                android:textColor="#D6CCCC"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/txtCelsius"
+                android:layout_width="wrap_content"
+                android:layout_height="109dp"
+                android:layout_below="@id/txtDiscription"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:drawableLeft="@drawable/total_temp"
+                android:text="200C"
+                android:textColor="#FFFDFD"
+                android:textSize="60dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="208dp"
+                android:layout_height="163dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/img" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        app:cardCornerRadius="15dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#044A9A">
+
+            <TextView
+                android:id="@+id/txtFeels_Like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:text="Feels like"
+                android:textColor="#D6CCCC"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/txtFeelsLike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/temprature"
+                android:gravity="center"
+                android:text="Feels like"
+                android:textColor="#FFFFFF"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="185dp"
+            android:layout_height="185dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginEnd="30dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#044A9A">
+                <TextView
+                    android:id="@+id/txtWindSpeed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Wind Speed"
+                    android:textColor="#D6CCCC"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/txtWind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/wind_speed"
+                    android:drawablePadding="5dp"
+                    android:layout_centerInParent="true"
+                    android:text="Wind"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="185dp"
+            android:layout_height="185dp"
+            app:cardCornerRadius="10dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#044A9A">
+                <TextView
+                    android:id="@+id/txt_Humidity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Humidity"
+                    android:textColor="#D6CCCC"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/txtHumidity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@drawable/humidity"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="0dp"
+                    android:text="Humidity"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="185dp"
+            android:layout_height="185dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginEnd="30dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#044A9A">
+                <TextView
+                    android:id="@+id/txt_Sunrise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Sunrise"
+                    android:textColor="#D6CCCC"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/txtSunrise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/sunrise"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="5dp"
+                    android:text="Sunrise"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="185dp"
+            android:layout_height="185dp"
+            app:cardCornerRadius="10dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#044A9A">
+                <TextView
+                    android:id="@+id/txt_sunset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Sunset"
+                    android:textColor="#D6CCCC"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/txtSunset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:text="Sunset"
+                    android:drawableLeft="@drawable/sunset"
+                    android:drawablePadding="5dp"
+                    android:textColor="#E6E6E6"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>
