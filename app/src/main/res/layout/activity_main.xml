@@ -12,7 +12,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardBackgroundColor="#044A9A"
+        app:cardBackgroundColor="#2E3030"
         android:elevation="10dp"
         android:layout_marginTop="-20dp"
         app:cardCornerRadius="20dp"
@@ -62,7 +62,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#044A9A">
+            android:background="#2E2F32">
 
             <TextView
                 android:id="@+id/txtLastUpdate"
@@ -130,7 +130,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#044A9A">
+            android:background="#2E3030">
 
             <TextView
                 android:id="@+id/txtFeels_Like"
@@ -175,7 +175,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#044A9A">
+                android:background="#303030">
                 <TextView
                     android:id="@+id/txtWindSpeed"
                     android:layout_width="wrap_content"
@@ -211,7 +211,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#044A9A">
+                android:background="#2E2F32">
                 <TextView
                     android:id="@+id/txt_Humidity"
                     android:layout_width="wrap_content"
@@ -257,7 +257,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#044A9A">
+                android:background="#2E2F32">
                 <TextView
                     android:id="@+id/txt_Sunrise"
                     android:layout_width="wrap_content"
@@ -293,7 +293,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#044A9A">
+                android:background="#2E2F32">
                 <TextView
                     android:id="@+id/txt_sunset"
                     android:layout_width="wrap_content"
