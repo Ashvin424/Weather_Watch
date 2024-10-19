@@ -12,9 +12,10 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardBackgroundColor="#2E3030"
+        app:cardBackgroundColor="#2E2F32"
         android:elevation="10dp"
         android:layout_marginTop="-20dp"
+        android:outlineSpotShadowColor="@color/white"
         app:cardCornerRadius="20dp"
         android:outlineAmbientShadowColor="#D8D5D5"
         >
@@ -22,21 +23,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
+                android:gravity="center"
                 android:layout_marginBottom="20dp"
                 >
+
             <TextView
                 android:id="@+id/txtcity"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:drawableLeft="@drawable/location"
-                android:layout_marginStart="20dp"
                 android:drawablePadding="5dp"
                 android:gravity="center"
                 android:text="Location"
                 android:textColor="#FFFFFF"
-                android:textSize="20dp"
-                />
+                android:textSize="20dp" />
 
             <TextView
                 android:id="@+id/txtToday"
@@ -56,6 +57,8 @@
         android:layout_height="wrap_content"
         app:cardCornerRadius="15dp"
         android:layout_marginTop="30dp"
+        android:outlineSpotShadowColor="@color/white"
+        app:cardElevation="15dp"
         android:layout_gravity="center"
         >
 
@@ -130,7 +133,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#2E3030">
+            android:background="#2E2F32">
 
             <TextView
                 android:id="@+id/txtFeels_Like"
@@ -175,7 +178,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#303030">
+                android:background="#2E2F32">
                 <TextView
                     android:id="@+id/txtWindSpeed"
                     android:layout_width="wrap_content"
